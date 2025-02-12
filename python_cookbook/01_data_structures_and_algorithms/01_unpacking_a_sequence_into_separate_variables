@@ -1,0 +1,8 @@
+data = ['ACME', 50, 91.1, (2012, 12, 21)]
+name, shares, price, (year, mon, day) = data
+print(name)
+print(shares)
+print(price)
+print(year)
+print(mon)
+print(day)
