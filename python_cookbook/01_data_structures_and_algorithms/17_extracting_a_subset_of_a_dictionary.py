@@ -14,3 +14,15 @@ print(p1)
 tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
 p2 = { key:value for key,value in prices.items() if key in tech_names }
 print(p2)
+
+#######################################################################
+
+p1 = dict((key, value) for key, value in prices.items() if value > 200)
+print(p1)
+
+#######################################################################
+
+# Make a dictionary of tech stocks
+tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
+p2 = { key:prices[key] for key in prices.keys() & tech_names }
+print(p2)
